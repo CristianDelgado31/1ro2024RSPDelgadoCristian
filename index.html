@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Lista</title>
+    <link rel="stylesheet" href="style.css"> <!-- Incluye tus estilos aquí -->
+    <script src="https://kit.fontawesome.com/707464f25e.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!-- FORMULARIO LISTA -->
+    <div id="container" class="container">
+        <h1>Formulario Lista</h1>
+        <table id="tablaPersonas">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Edad</th>
+                    <th>Alter Ego</th>
+                    <th>Ciudad</th>
+                    <th>Publicado</th>
+                    <th>Enemigo</th>
+                    <th>Robos</th>
+                    <th>Asesinatos</th>
+                    <th>Modificar</th>
+                    <th>Eliminar</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <button id="addElement">Agregar Elemento</button>
+    </div>
+    
+    <!-- FORMULARIO ABM -->
+    <div id="form_container" class="form">
+        <h1>Formulario ABM</h1>
+        <form id="formulario">
+            <label for="id" id="lbl_id">ID:</label>
+            <input type="text" id="id" name="id" readonly>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" required>
+            <label for="tipo">Tipo:</label>
+            <select id="tipo_persona" name="tipo">
+                <option value="">Seleccione un tipo</option>
+                <option value="heroe">Heroe</option>
+                <option value="villano">Villano</option>
+            </select>
+            <!-- Heroe -->
+            <label for="alterEgo" id="lbl_alterEgo">Alter ego:</label>
+            <input type="text" id="alterEgo" name="alterEgo" required>
+            <label for="ciudad" id="lbl_ciudad">Ciudad:</label>
+            <input type="text" id="ciudad" name="ciudad" required>
+            <label for="publicado" id="lbl_publicado">Publicado:</label>
+            <input type="text" id="publicado" name="publicado">
+            <!-- Villano -->
+            <label for="enemigo" id="lbl_enemigo">Enemigo:</label>
+            <input type="text" id="enemigo" name="enemigo">
+            <label for="robos" id="lbl_robos">Robos:</label>
+            <input type="number" id="robos" name="robos">
+            <label for="asesinatos" id="lbl_asesinatos">Asesinatos:</label>
+            <input type="number" id="asesinatos" name="asesinatos">
+
+            <button id="acept">Aceptar</button>
+            <!-- <button id="update">Modificar</button> -->
+            <button id="cancel">Cancelar</button>
+        </form>
+    </div>
+
+   <!-- Contenedor del Spinner -->
+    <div id="spinnerContainer">
+        <div>
+            <i class="fas fa-spinner fa-3x"></i> <!-- Icono de Spinner de Font Awesome -->
+            <!-- <p>Cargando...</p> -->
+        </div>
+    </div>
+
+
+
+
+    <script src="main.js"></script> <!-- Incluye tus scripts aquí -->
+</body>
+</html>
